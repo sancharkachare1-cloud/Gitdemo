@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Movie Hub</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background-image:url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba");
+background-size:cover;
+background-attachment:fixed;
+color:white;
+}
+
+/* Navbar */
+
+nav{
+background:rgba(0,0,0,0.9);
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+color:#ff3c3c;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+margin:0;
+padding:0;
+}
+
+nav ul li{
+margin:0 15px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-size:18px;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#ff3c3c;
+}
+
+/* Hero Section */
+
+.hero{
+text-align:center;
+padding:120px 20px;
+background:rgba(0,0,0,0.6);
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:20px;
+}
+
+/* Movie Section */
+
+.movies{
+padding:40px;
+text-align:center;
+}
+
+.movies h2{
+margin-bottom:30px;
+font-size:32px;
+}
+
+.movie-container{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:30px;
+}
+
+/* Movie Card */
+
+.movie-card{
+background:rgba(0,0,0,0.8);
+border-radius:10px;
+overflow:hidden;
+width:220px;
+transition:0.3s;
+}
+
+.movie-card:hover{
+transform:scale(1.05);
+}
+
+.movie-card img{
+width:100%;
+height:300px;
+object-fit:cover;
+}
+
+.movie-info{
+padding:15px;
+}
+
+.movie-info h3{
+margin:0;
+font-size:20px;
+}
+
+.rating{
+color:gold;
+margin-top:5px;
+}
+
+/* Footer */
+
+footer{
+background:rgba(0,0,0,0.9);
+text-align:center;
+padding:15px;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">Movie Hub</div>
+
+<ul>
+<li><a href="Home.html">Home</a></li>
+<li><a href="login.html">Login</a></li>
+<li><a href="Movies.html">Movies</a></li>
+<li><a href="About.html">About</a></li>
+<li><a href="Contact.html">Contact</a></li>
+<li><a href="Feedback.html">Feedback</a></li>
+</ul>
+</nav>
+
+
+<section class="hero">
+<h1>Welcome to Movie Hub 🎬</h1>
+<p>Discover the best movies, ratings, and trailers</p>
+</section>
+
+
+<section class="movies">
+<h2>Featured Movies</h2>
+
+<div class="movie-container">
+
+<div class="movie-card">
+<img src="https://m.media-amazon.com/images/I/81ExhpBEbHL.jpg">
+<div class="movie-info">
+<h3>Avengers Endgame</h3>
+<div class="rating">⭐ 8.4</div>
+</div>
+</div>
+
+<div class="movie-card">
+<img src="images/Joker.jpg">
+<div class="movie-info">
+<h3>Joker</h3>
+<div class="rating">⭐ 8.5</div>
+</div>
+</div>
+
+<div class="movie-card">
+<img src="images/Interstellar.jpg">
+<div class="movie-info">
+<h3>Interstellar</h3>
+<div class="rating">⭐ 8.6</div>
+</div>
+</div>
+
+<div class="movie-card">
+<img src="images/Spider man.jpg">
+<div class="movie-info">
+<h3>Spider-Man</h3>
+<div class="rating">⭐ 8.2</div>
+</div>
+</div>
+
+</div>
+</section>
+
+
+<footer>
+<p>© 2026 Movie Hub | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
